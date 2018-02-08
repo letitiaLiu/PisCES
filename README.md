@@ -10,7 +10,7 @@ with “letting the data speak". After finding the community assignments, we use
 </p>
 
 ## Usage
-After extracting a list of adjacency (or correlation) matrices from your networks, save them as a 3-dimension array $ A \in R^{N\times N\times T} $, where N is the number of nodes and T is the number of times. Then run PisCES to get a list of memberships. More detailed usage and options can be found in code folder: PisCES_code.
+After extracting a list of adjacency (or correlation) matrices from your networks, save them as a 3-dimension array A with dimension *A\in R^N*, where N is the number of nodes and T is the number of times. Then run PisCES to get a list of memberships. More detailed usage and options can be found in code folder: PisCES_code.
 ```
 memberships = PisCES(A)
 ```
