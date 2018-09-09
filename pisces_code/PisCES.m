@@ -53,7 +53,7 @@ Aori = A;
 if degree == 'T'
     for t = 1:T
         a = A(:,:,t);
-        d = diag(sum(a) + 10^-10);
+        d = diag(sum(abs(a)) + 10^-10);
         A(:,:,t) = sqrt(inv(d))*a*sqrt(inv(d));
         D(:,:,t) = d;
     end
